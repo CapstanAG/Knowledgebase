@@ -1,0 +1,2074 @@
+[
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 1: Reset",
+    "FAULT MESSAGE": "Brown out reset",
+    "Cause(s)": "The system has reset after a low voltage event.",
+    "Correction(s)": "Make sure that the system has at least 12 V. Note: At 10 V to 10.5 V the reset will occur."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 1: Reset",
+    "FAULT MESSAGE": "Brown out reset",
+    "Cause(s)": "The system has reset after a low voltage event.",
+    "Correction(s)": "Check the power connections for reliable supply."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 2: Reset",
+    "FAULT MESSAGE": "Watchdog reset",
+    "Cause(s)": "The processor got stuck in a task.",
+    "Correction(s)": "Continue operation. If problem persists, do a Factory Reset."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 4: Memory Fault",
+    "FAULT MESSAGE": "Internal FLASH write Fault",
+    "Cause(s)": "The hub did not write correctly to the FLASH memory",
+    "Correction(s)": "Upload software to hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 4: Memory Fault",
+    "FAULT MESSAGE": "Internal FLASH write Fault",
+    "Cause(s)": "The hub did not write correctly to the FLASH memory",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 7: Memory Fault",
+    "FAULT MESSAGE": "EEPROM read Fault",
+    "Cause(s)": "The hub did not read correctly from EEPROM memory",
+    "Correction(s)": "If the system does not operate correctly, first perform a Factory Reset."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 7: Memory Fault",
+    "FAULT MESSAGE": "EEPROM read Fault",
+    "Cause(s)": "The hub did not read correctly from EEPROM memory",
+    "Correction(s)": "Upload software to hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 7: Memory Fault",
+    "FAULT MESSAGE": "EEPROM read Fault",
+    "Cause(s)": "The hub did not read correctly from EEPROM memory",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 8: Memory Fault",
+    "FAULT MESSAGE": "EEPROM write Fault",
+    "Cause(s)": "The hub did not write correctly to EEPROM memory",
+    "Correction(s)": "If the system does not operate correctly, first perform a Factory Reset."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 8: Memory Fault",
+    "FAULT MESSAGE": "EEPROM write Fault",
+    "Cause(s)": "The hub did not write correctly to EEPROM memory",
+    "Correction(s)": "Upload software to hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 8: Memory Fault",
+    "FAULT MESSAGE": "EEPROM write Fault",
+    "Cause(s)": "The hub did not write correctly to EEPROM memory",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 9: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 1",
+    "Cause(s)": "The main hub processor and VCM 1 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 10: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 2",
+    "Cause(s)": "The main hub processor and VCM 2 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 11: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 3",
+    "Cause(s)": "The main hub processor and VCM 3 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 12: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 4",
+    "Cause(s)": "The main hub processor and VCM 4 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 13: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 5",
+    "Cause(s)": "The main hub processor and VCM 5 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 14: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 6",
+    "Cause(s)": "The main hub processor and VCM 6 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 15: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 7",
+    "Cause(s)": "The main hub processor and VCM 7 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 16: Internal Communication Fault",
+    "FAULT MESSAGE": "Processor to processor communication with VCM Port 8",
+    "Cause(s)": "The main hub processor and VCM 8 port connector on the hub have stopped communicating.",
+    "Correction(s)": "If there are any unused VCM ports on the hub, remove the VCM harness from the stopped port and all subsequent ports. Skipping the stopped port, install the harnesses to remaining ports in the same order. If all of the VCM ports are in use, contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 25: No CAN Communications",
+    "FAULT MESSAGE": "No CAN communications",
+    "Cause(s)": "ISOBUS CAN is disconnected or damaged",
+    "Correction(s)": "Do a check of the connections for the ISOBUS CAN—ISO CAN GPS connector on hub and the harnesses on the machine."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 25: No CAN Communications",
+    "FAULT MESSAGE": "No CAN communications",
+    "Cause(s)": "ISOBUS CAN is disconnected or damaged",
+    "Correction(s)": "Do a check for proper termination on the ISOBUS CAN."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 26: No CAN GPS Messages",
+    "FAULT MESSAGE": "No CAN GPS Messages",
+    "Cause(s)": "After CAN GPS is selected, the system is not receiving CAN GPS Messages. Note: Options are only visible on the display if the system detects that they are available.",
+    "Correction(s)": "Verify the GPS source and change if necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 27: No CAN Lat/ Lon Message",
+    "FAULT MESSAGE": "No CAN Lat/ Lon Message",
+    "Cause(s)": "After CAN GPS is selected the system is not receiving CAN latitude and longitude GPS Messages. Note: Options are only visible on the display if the system detects that they are available.",
+    "Correction(s)": "Verify GPS source is transmitting Lat/Lon."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 27: No CAN Lat/ Lon Message",
+    "FAULT MESSAGE": "No CAN Lat/ Lon Message",
+    "Cause(s)": "After CAN GPS is selected the system is not receiving CAN latitude and longitude GPS Messages. Note: Options are only visible on the display if the system detects that they are available.",
+    "Correction(s)": "Verify the GPS source and change if necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 28: No CAN Course Over Ground/ Speed Over Ground Message",
+    "FAULT MESSAGE": "No CAN Course Over Ground/ Speed Over Ground Message",
+    "Cause(s)": "After CAN GPS is selected the system is not receiving CAN bearing and speed GPS Messages. Note: Options are only visible on the display if the system detects that they are available.",
+    "Correction(s)": "Verify GPS source is transmitting bearing and speed."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 28: No CAN Course Over Ground/ Speed Over Ground Message",
+    "FAULT MESSAGE": "No CAN Course Over Ground/ Speed Over Ground Message",
+    "Cause(s)": "After CAN GPS is selected the system is not receiving CAN bearing and speed GPS Messages. Note: Options are only visible on the display if the system detects that they are available.",
+    "Correction(s)": "Verify the GPS source and change if necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 29: No CAN VT Reception",
+    "FAULT MESSAGE": "No CAN Communications With The VT",
+    "Cause(s)": "ISOBUS CAN Fault",
+    "Correction(s)": "Check the connections for the ISOBUS CAN—ISO CAN GPS connector on hub and the harnesses on the machine."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 29: No CAN VT Reception",
+    "FAULT MESSAGE": "No CAN Communications With The VT",
+    "Cause(s)": "ISOBUS CAN Fault",
+    "Correction(s)": "Check for proper termination on the ISOBUS CAN."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 29: No CAN VT Reception",
+    "FAULT MESSAGE": "No CAN Communications With The VT",
+    "Cause(s)": "ISOBUS CAN Fault",
+    "Correction(s)": "Connect the virtual terminal display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 30: No CAN TC Reception",
+    "FAULT MESSAGE": "No CAN Communications With The TC",
+    "Cause(s)": "ISOBUS CAN Fault",
+    "Correction(s)": "Check the connections for the ISOBUS CAN—ISO CAN GPS connector on hub and the harnesses on the machine."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 30: No CAN TC Reception",
+    "FAULT MESSAGE": "No CAN Communications With The TC",
+    "Cause(s)": "ISOBUS CAN Fault",
+    "Correction(s)": "Check for proper termination on the ISOBUS CAN."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 30: No CAN TC Reception",
+    "FAULT MESSAGE": "No CAN Communications With The TC",
+    "Cause(s)": "Task Controller is not configured correctly",
+    "Correction(s)": "Machine Task Controller setup required."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 30: No CAN TC Reception",
+    "FAULT MESSAGE": "No CAN Communications With The TC",
+    "Cause(s)": "Task Controller is not enabled or not unlocked",
+    "Correction(s)": "Contact your machine dealer."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 32: No RS-232 GPS Communications",
+    "FAULT MESSAGE": "No RS-232 GPS",
+    "Cause(s)": "No GPS messages are being received",
+    "Correction(s)": "Cycle the GPS power"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 32: No RS-232 GPS Communications",
+    "FAULT MESSAGE": "No RS-232 GPS",
+    "Cause(s)": "No GPS messages are being received",
+    "Correction(s)": "Check the GPS antenna connections and fuses"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 32: No RS-232 GPS Communications",
+    "FAULT MESSAGE": "No RS-232 GPS",
+    "Cause(s)": "GPS messages are being received but are empty",
+    "Correction(s)": "Wait for the GPS antenna to acquire satellites"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 32: No RS-232 GPS Communications",
+    "FAULT MESSAGE": "No RS-232 GPS",
+    "Cause(s)": "Faulty GPS antenna",
+    "Correction(s)": "Replace the GPS antenna"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 32: No RS-232 GPS Communications",
+    "FAULT MESSAGE": "No RS-232 GPS",
+    "Cause(s)": "Faulty GPS receiver",
+    "Correction(s)": "Replace the GPS receiver"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 32: No RS-232 GPS Communications",
+    "FAULT MESSAGE": "No RS-232 GPS",
+    "Cause(s)": "Incorrect GPS settings",
+    "Correction(s)": "Wait 10 seconds while the GPS verifies itself. Change GPS receiver settings to: • Baud Rate: 19200 to 115200 • GGA: 10 Hz or more • VTG: 10 Hz or more • ZDA: 1 Hz or more"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 33: No RS-232 GGA Message",
+    "FAULT MESSAGE": "No RS-232 GGA Message",
+    "Cause(s)": "Incorrect GPS settings",
+    "Correction(s)": "Change the GGA message rate to at least 10 Hz on the GPS receiver"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 34: No RS-232 VTG Message",
+    "FAULT MESSAGE": "No RS-232 VTG Message",
+    "Cause(s)": "Incorrect GPS settings",
+    "Correction(s)": "Change the VTG message rate to at least 10 Hz on the GPS receiver"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 36: No Ethernet Communications",
+    "FAULT MESSAGE": "No Ethernet Communications",
+    "Cause(s)": "No Ethernet communication with the CapMod",
+    "Correction(s)": "Check the harnessing between the Ethernet port on the hub and the CapMod Ethernet port."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 36: No Ethernet Communications",
+    "FAULT MESSAGE": "No Ethernet Communications",
+    "Cause(s)": "No Ethernet communication with the CapMod",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub or CapMod."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 38: Internal Communication Fault",
+    "FAULT MESSAGE": "Accelerometer initialization error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 38: Internal Communication Fault",
+    "FAULT MESSAGE": "Accelerometer initialization error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Disable the compass and gyro on the display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 39: Internal Communication Fault",
+    "FAULT MESSAGE": "Accelerometer read error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 39: Internal Communication Fault",
+    "FAULT MESSAGE": "Accelerometer read error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Disable the compass and gyro on the display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 40: Internal Communication Fault",
+    "FAULT MESSAGE": "Compass initialization error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 40: Internal Communication Fault",
+    "FAULT MESSAGE": "Compass initialization error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Disable the compass and gyro on the display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 41: Internal Communication Fault",
+    "FAULT MESSAGE": "Compass read error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 41: Internal Communication Fault",
+    "FAULT MESSAGE": "Compass read error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Disable the compass and gyro on the display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 42: Internal Communication Fault",
+    "FAULT MESSAGE": "Gyroscope initialization error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 42: Internal Communication Fault",
+    "FAULT MESSAGE": "Gyroscope initialization error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Disable the compass and gyro on the display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 43: Internal Communication Fault",
+    "FAULT MESSAGE": "Gyroscope gyro read error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 43: Internal Communication Fault",
+    "FAULT MESSAGE": "Gyroscope gyro read error",
+    "Cause(s)": "Communication problem with the Inertial Measurement Unit in the hub.",
+    "Correction(s)": "Disable the compass and gyro on the display."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 44: Drop 1 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 1",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 45: Drop 2 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 2",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 46: Drop 3 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 3",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 47: Drop 4 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 4",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 48: Drop 5 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 5",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 49: Drop 6 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 6",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 50: Drop 7 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 7",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 51: Drop 8 Power Short",
+    "FAULT MESSAGE": "Power shorted to ground on drop 8",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harness, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 52: VCM drop 1 controller version error",
+    "FAULT MESSAGE": "VCM drop 1 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 53: VCM drop 2 controller version error",
+    "FAULT MESSAGE": "VCM drop 2 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 54: VCM drop 3 controller version error",
+    "FAULT MESSAGE": "VCM drop 3 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 55: VCM drop 4 controller version error",
+    "FAULT MESSAGE": "VCM drop 4 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 56: VCM drop 5 controller version error",
+    "FAULT MESSAGE": "VCM drop 5 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 57: VCM drop 6 controller version error",
+    "FAULT MESSAGE": "VCM drop 6 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 58: VCM drop 7 controller version error",
+    "FAULT MESSAGE": "VCM drop 7 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 59: VCM drop 8 controller version error",
+    "FAULT MESSAGE": "VCM drop 8 controller version does not match the Hub application",
+    "Cause(s)": "The VCM drop version was updated with the latest Hub update and needs to be boot-loaded.",
+    "Correction(s)": "Perform a factory reset or software reset to trigger VCM drop bootload"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 60: Drop 1 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 1",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 60: Drop 1 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 2",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 61: Drop 2 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 2",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 61: Drop 2 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 3",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 62: Drop 3 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 3",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 62: Drop 3 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 4",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 63: Drop 4 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 4",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 63: Drop 4 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 5",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 64: Drop 5 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 5",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 64: Drop 5 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 6",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 65: Drop 6 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 6",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 65: Drop 6 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 7",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 66: Drop 7 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 7",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 66: Drop 7 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 8",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 67: Drop 8 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 8",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 67: Drop 8 CAN Failure",
+    "FAULT MESSAGE": "CAN Failure on drop 9",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 68: VCM drop 1 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 1",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 68: VCM drop 1 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 2",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 1."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 69: VCM drop 2 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 2",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 69: VCM drop 2 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 3",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 2."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 70: VCM drop 3 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 3",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 70: VCM drop 3 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 4",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 3."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 71: VCM drop 4 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 4",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 71: VCM drop 4 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 5",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 4."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 72: VCM drop 5 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 5",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 72: VCM drop 5 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 6",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 5."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 73: VCM drop 6 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 6",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 73: VCM drop 6 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 7",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 6."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 74: VCM drop 7 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 7",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 74: VCM drop 7 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 8",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 7."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 75: VCM drop 8 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 8",
+    "Cause(s)": "Process failure",
+    "Correction(s)": "Perform a software reset from the System Menu."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 75: VCM drop 8 Firmware update failure",
+    "FAULT MESSAGE": "A firmware update failed on VCM drop 9",
+    "Cause(s)": "Poor harness connection",
+    "Correction(s)": "Inspect the harness connections on VCM Drop 8."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 76: Section 1 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 1 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 1 valve and section 9 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 1"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 76: Section 1 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 1 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 76: Section 1 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 1 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 77: Section 2 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 2 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 2 valve and section 10 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 2"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 77: Section 2 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 2 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 77: Section 2 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 2 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 78: Section 3 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 3 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 3 valve and section 11 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 3"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 78: Section 3 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 3 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 78: Section 3 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 3 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 79: Section 4 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 4 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 4 valve and section 12 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 4"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 79: Section 4 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 4 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 79: Section 4 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 4 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 80: Section 5 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 5 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 5 valve and section 13 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 5"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 80: Section 5 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 5 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 80: Section 5 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 5 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 81: Section 6 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 6 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 6 valve and section 14 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 6"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 81: Section 6 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 6 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 81: Section 6 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 6 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 82: Section 7 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 7 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 7 valve and section 15 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 7"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 82: Section 7 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 7 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 82: Section 7 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 7 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 83: Section 8 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 8 Valve Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Check the connections to section 8 valve and section 16 valve. Inspect pin 3 (blue wire) on harnesses of VCM drop 8"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 83: Section 8 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 8 Valve Short Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 83: Section 8 Valve Short Circuit",
+    "FAULT MESSAGE": "Section 8 Valve Short Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 84: Section 1 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 1 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 84: Section 1 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 1 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 84: Section 1 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 1 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 85: Section 2 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 2 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 85: Section 2 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 2 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 85: Section 2 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 2 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 86: Section 3 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 3 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 86: Section 3 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 3 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 86: Section 3 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 3 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 87: Section 4 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 4 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 87: Section 4 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 4 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 87: Section 4 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 4 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 88: Section 5 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 5 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 88: Section 5 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 5 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 88: Section 5 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 5 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 89: Section 6 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 6 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 89: Section 6 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 6 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 89: Section 6 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 6 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 90: Section 7 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 7 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 90: Section 7 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 7 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 90: Section 7 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 7 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 91: Section 8 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 8 Valve Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Inspect the harnesses and connections, repair or replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 91: Section 8 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 8 Valve Open Circuit",
+    "Cause(s)": "Internal hub problem",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 91: Section 8 Valve Open Circuit",
+    "FAULT MESSAGE": "Section 8 Valve Open Circuit",
+    "Cause(s)": "Servo valve failure",
+    "Correction(s)": "Repair or replace the servo valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 92: Section 1 Low Pressure",
+    "FAULT MESSAGE": "Section 1 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 93: Section 2 Low Pressure",
+    "FAULT MESSAGE": "Section 2 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 94: Section 3 Low Pressure",
+    "FAULT MESSAGE": "Section 3 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 95: Section 4 Low Pressure",
+    "FAULT MESSAGE": "Section 4 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 96: Section 5 Low Pressure",
+    "FAULT MESSAGE": "Section 5 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 97: Section 6 Low Pressure",
+    "FAULT MESSAGE": "Section 6 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 98: Section 7 Low Pressure",
+    "FAULT MESSAGE": "Section 7 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 99: Section 8 Low Pressure",
+    "FAULT MESSAGE": "Section 8 Low Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 100: Section 1 High Pressure",
+    "FAULT MESSAGE": "Section 1 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 101: Section 2 High Pressure",
+    "FAULT MESSAGE": "Section 2 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 102: Section 3 High Pressure",
+    "FAULT MESSAGE": "Section 3 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 103: Section 4 High Pressure",
+    "FAULT MESSAGE": "Section 4 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 104: Section 5 High Pressure",
+    "FAULT MESSAGE": "Section 5 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 105: Section 6 High Pressure",
+    "FAULT MESSAGE": "Section 6 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 106: Section 7 High Pressure",
+    "FAULT MESSAGE": "Section 7 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 107: Section 8 High Pressure",
+    "FAULT MESSAGE": "Section 8 High Pressure",
+    "Cause(s)": "If you are using sectional pressure sensors, this means the section is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 108: Servo Valve Short Circuit",
+    "FAULT MESSAGE": "Servo Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Repair or replace the harness"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 108: Servo Valve Short Circuit",
+    "FAULT MESSAGE": "Servo Short Circuit",
+    "Cause(s)": "Damaged valve",
+    "Correction(s)": "Repair or replace the valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 109: Servo Valve Open Circuit",
+    "FAULT MESSAGE": "Servo Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Repair or replace the harness"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 109: Servo Valve Open Circuit",
+    "FAULT MESSAGE": "Servo Open Circuit",
+    "Cause(s)": "Damaged valve",
+    "Correction(s)": "Repair or replace the valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 109: Servo Valve Open Circuit",
+    "FAULT MESSAGE": "Servo Open Circuit",
+    "Cause(s)": "Connectors are not connected",
+    "Correction(s)": "Check the connections"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 110: Flowmeter Short Circuit",
+    "FAULT MESSAGE": "Flowmeter Short Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Repair or replace the harness"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 110: Flowmeter Short Circuit",
+    "FAULT MESSAGE": "Flowmeter Short Circuit",
+    "Cause(s)": "Damaged flowmeter",
+    "Correction(s)": "Repair or replace the flowmeter"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 111: Flowmeter Open Circuit",
+    "FAULT MESSAGE": "Flowmeter Open Circuit",
+    "Cause(s)": "Damaged harness",
+    "Correction(s)": "Repair or replace the harness"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 111: Flowmeter Open Circuit",
+    "FAULT MESSAGE": "Flowmeter Open Circuit",
+    "Cause(s)": "Damaged flowmeter",
+    "Correction(s)": "Repair or replace the flowmeter"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 111: Flowmeter Open Circuit",
+    "FAULT MESSAGE": "Flowmeter Open Circuit",
+    "Cause(s)": "Connectors are not connected",
+    "Correction(s)": "Check the connections"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 112: System 1 Low Pressure",
+    "FAULT MESSAGE": "System 1 Low Pressure",
+    "Cause(s)": "The system is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 113: System 1 High Pressure",
+    "FAULT MESSAGE": "System 1 High Pressure",
+    "Cause(s)": "The system is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 114: System 2 Low Pressure",
+    "FAULT MESSAGE": "System 2 Low Pressure",
+    "Cause(s)": "The system is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 115: System 2 High Pressure",
+    "FAULT MESSAGE": "System 2 High Pressure",
+    "Cause(s)": "The system is above the maximum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 116: VCM Memory",
+    "FAULT MESSAGE": "VCM Memory",
+    "Cause(s)": "Settings in the VCM do not match settings in the Hub.",
+    "Correction(s)": "Cycle the power to the system"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 116: VCM Memory",
+    "FAULT MESSAGE": "VCM Memory",
+    "Cause(s)": "Settings in the VCM do not match settings in the Hub.",
+    "Correction(s)": "Perform a factory reset"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 116: VCM Memory",
+    "FAULT MESSAGE": "VCM Memory",
+    "Cause(s)": "Settings in the VCM do not match settings in the Hub.",
+    "Correction(s)": "Upload software to the hub"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 117: Boom Profile Mismatch",
+    "FAULT MESSAGE": "Nozzle Memory",
+    "Cause(s)": "The boom profile in memory doesn’t match the attached hardware.",
+    "Correction(s)": "Cycle the power to the system"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 117: Boom Profile Mismatch",
+    "FAULT MESSAGE": "Nozzle Memory",
+    "Cause(s)": "The boom profile in memory doesn’t match the attached hardware.",
+    "Correction(s)": "Perform a factory reset"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 117: Boom Profile Mismatch",
+    "FAULT MESSAGE": "Nozzle Memory",
+    "Cause(s)": "The boom profile in memory doesn’t match the attached hardware.",
+    "Correction(s)": "Upload software to the hub"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 118: Nozzle Count Error",
+    "FAULT MESSAGE": "Nozzle Count Error",
+    "Cause(s)": "The number of attached nozzle valves doesn’t match the value in memory",
+    "Correction(s)": "Cycle the power to the system"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 118: Nozzle Count Error",
+    "FAULT MESSAGE": "Nozzle Count Error",
+    "Cause(s)": "The number of attached nozzle valves doesn’t match the value in memory",
+    "Correction(s)": "Perform a factory reset"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 118: Nozzle Count Error",
+    "FAULT MESSAGE": "Nozzle Count Error",
+    "Cause(s)": "The number of attached nozzle valves doesn’t match the value in memory",
+    "Correction(s)": "Verify all valves are functional"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 119: System Memory",
+    "FAULT MESSAGE": "System Memory",
+    "Cause(s)": "The hub did not read the menu settings correctly from memory.",
+    "Correction(s)": "Cycle the power to the system"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 119: System Memory",
+    "FAULT MESSAGE": "System Memory",
+    "Cause(s)": "The hub did not read the menu settings correctly from memory.",
+    "Correction(s)": "Perform a factory reset"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 119: System Memory",
+    "FAULT MESSAGE": "System Memory",
+    "Cause(s)": "The hub did not read the menu settings correctly from memory.",
+    "Correction(s)": "Contact CapstanAG to repair or replace the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 120: Pump Seal",
+    "FAULT MESSAGE": "Pump Seal",
+    "Cause(s)": "System pressure dropped below the minimum for 8 seconds.",
+    "Correction(s)": "Fill the tank and then restart the pump. To restart the pump: Go to the main screen CapstanAG operating screen: Select System>>On/off icon next to Pump is system status window"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 121: Control Duty Cycle Zero",
+    "FAULT MESSAGE": "Control Duty Cycle",
+    "Cause(s)": "Pump control is off because external rate controller is off. (Only used in External Task Control Mode with Synchro fluid control)",
+    "Correction(s)": "Check the rate controller settings and change as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 122: Low Pressure",
+    "FAULT MESSAGE": "Low Pressure",
+    "Cause(s)": "The system is below the minimum voltage for the pressure sensor.",
+    "Correction(s)": "Inspect the pressure sensor, harnesses, and connections, repair or replace as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Flowmeter calibration number is incorrect",
+    "Correction(s)": "Check the flowmeter calibration."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Damaged flowmeter",
+    "Correction(s)": "Repair or replace the flowmeter as necessary."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Wrong tip size on display",
+    "Correction(s)": "Change the value on the display"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Wrong valve size on display",
+    "Correction(s)": "Change the value on the display"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Boom leak",
+    "Correction(s)": "Inspect the booms and repair any damage"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Section valve not operating",
+    "Correction(s)": "Inspect the section valves and repair/replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Plugged strainers",
+    "Correction(s)": "Clean or replace the strainers"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 123: Flow Percentage",
+    "FAULT MESSAGE": "Flow percentage exceeds the maximum value set in the system menu",
+    "Cause(s)": "Lodged plungers",
+    "Correction(s)": "Clean or replace the strainers"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 125: Low Flow Rate Sync",
+    "FAULT MESSAGE": "Low Flow Rate Sync",
+    "Cause(s)": "",
+    "Correction(s)": "This is used only for John Deere and is information only."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 126: Pump Speed",
+    "FAULT MESSAGE": "Pump Speed",
+    "Cause(s)": "On a system with a pump speed sensor, the system has exceeded the maximum allowable pump speed.",
+    "Correction(s)": "Fill the tank"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 126: Pump Speed",
+    "FAULT MESSAGE": "Pump Speed",
+    "Cause(s)": "On a system with a pump speed sensor, the system has exceeded the maximum allowable pump speed.",
+    "Correction(s)": "Reduce the pressure or flow"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 127: Plug Strainer",
+    "FAULT MESSAGE": "Plug Strainer",
+    "Cause(s)": "Strainer is clogged",
+    "Correction(s)": "Clean or replace the strainers"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 128: Low Tank Volume",
+    "FAULT MESSAGE": "Low Tank Volume",
+    "Cause(s)": "The tank volume is low",
+    "Correction(s)": "Fill the tank"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 129: Float Switch",
+    "FAULT MESSAGE": "Float Switch",
+    "Cause(s)": "The float switch indicated that the tank is empty or there is vapor in the lines.",
+    "Correction(s)": "Fill the tank"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 130: Float Switch 2",
+    "FAULT MESSAGE": "Float Switch 2",
+    "Cause(s)": "The float switch indicated that the tank is empty or there is vapor in the lines.",
+    "Correction(s)": "Fill the tank"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 500: Valve Lodged Open",
+    "FAULT MESSAGE": "Valve Lodged Open",
+    "Cause(s)": "Debris in the valve",
+    "Correction(s)": "Clean the valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 501: Valve Lodged Closed",
+    "FAULT MESSAGE": "Valve Lodged Closed",
+    "Cause(s)": "Debris in the valve",
+    "Correction(s)": "Clean the valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 502: Coil Circuit Open",
+    "FAULT MESSAGE": "Coil Circuit Open",
+    "Cause(s)": "Coil wire is pinched, cut, broken, or disconnected",
+    "Correction(s)": "Check the coil connection and resistance: • 7-watt coils resistance — 21 ohms to 23.5 ohms • 12-watt coils resistance — 10 ohms to 11.5 ohms"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 503: Coil Circuit Short",
+    "FAULT MESSAGE": "Coil Circuit Short",
+    "Cause(s)": "Internal coil short: Coil wire is pinched, cut, or broken",
+    "Correction(s)": "Check the coil connection and resistance: • 7-watt coils resistance — 21 ohms to 23.5 ohms • 12-watt coils resistance — 10 ohms to 11.5 ohms"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 504: Extra Coil",
+    "FAULT MESSAGE": "Extra Coil",
+    "Cause(s)": "A valve has been sensed on a VCM after the system was setup.",
+    "Correction(s)": "If you do have an extra valve, perform a factory reset to correctly set up the system."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "Fault 504: Extra Coil",
+    "FAULT MESSAGE": "Extra Coil",
+    "Cause(s)": "A valve has been sensed on a VCM after the system was setup.",
+    "Correction(s)": "If you do not have additional valve(s), there is a VCM problem and you must repair or replace the VCM."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Tips are too small",
+    "Correction(s)": "Find and install tips that are the correct size"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Plugged tips",
+    "Correction(s)": "Clean or replace the tips"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Plugged filter(s)",
+    "Correction(s)": "Clean or replace the filter(s)"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Filter(s) not correctly installed",
+    "Correction(s)": "Correctly install filter(s)"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Plugged, kinked, or collapsed hoses",
+    "Correction(s)": "Check all hoses and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Pump is not turned on",
+    "Correction(s)": "Refer to the sprayer manual for instructions to start the pump"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Outrunning sprayer liquid system capability",
+    "Correction(s)": "Slow down"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Outrunning sprayer liquid system capability",
+    "Correction(s)": "Run at optimum pressure per nozzle speed range charts"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Incorrect rate settings",
+    "Correction(s)": "Check and adjust the rate settings"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Incorrect calibration settings",
+    "Correction(s)": "Refer to the rate controller and/or system manuals for instructions"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Faulty radar",
+    "Correction(s)": "Replace the radar"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Poor GPS satellite signal",
+    "Correction(s)": "Make sure that the GPS is working correctly"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Faulty rate controller switch(es)",
+    "Correction(s)": "Locate and replace the faulty switch(es)"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Servo valve not working correctly",
+    "Correction(s)": "Inspect the Servo valve and replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Flowmeter calibration value is incorrect",
+    "Correction(s)": "Check the flowmeter calibration"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Faulty flowmeter",
+    "Correction(s)": "Repair or replace the flowmeter"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Tips are too large",
+    "Correction(s)": "Install tips of the correct size"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Worn tips",
+    "Correction(s)": "Replace the tips"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Speed too slow",
+    "Correction(s)": "Increase speed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Incorrect rate settings",
+    "Correction(s)": "Check the rate settings and adjust as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Incorrect calibration settings",
+    "Correction(s)": "Refer to the rate controller and/or system manuals for instructions"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Servo valve not working correctly",
+    "Correction(s)": "Inspect the Servo valve and replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Flowmeter calibration value is incorrect",
+    "Correction(s)": "Check the flowmeter calibration"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over application",
+    "Cause(s)": "Faulty flowmeter",
+    "Correction(s)": "Repair or replace the flowmeter"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Low voltage to the rate controller",
+    "Correction(s)": "Test the voltage and repair as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Faulty flowmeter",
+    "Correction(s)": "Repair or replace the flowmeter"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Faulty speed sensor reading",
+    "Correction(s)": "Inspect the radar and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Collapsed suction hose",
+    "Correction(s)": "Replace the suction hose"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Inlet plugged",
+    "Correction(s)": "Inspect the inlet and clean as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Incorrect valve calibration settings",
+    "Correction(s)": "Check the valve calibration settings and adjust as necessary. Refer to the rate controller manual"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Incorrect system gain",
+    "Correction(s)": "Check of the system gain and adjust as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "The system run/hold parameter is too short",
+    "Correction(s)": "Incrementally adjust up the system run/hold parameter to decrease the instability"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Air in the spray boom",
+    "Correction(s)": "Bleed air from the system"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate instability",
+    "Cause(s)": "Faulty rate controller",
+    "Correction(s)": "Replace the rate controller"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Pressure instability",
+    "Cause(s)": "Faulty rate controller",
+    "Correction(s)": "Replace the rate controller"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Pressure instability",
+    "Cause(s)": "Worn or sticky poppet(s)",
+    "Correction(s)": "Inspect the poppet(s) and replace as necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Pressure instability",
+    "Cause(s)": "Incorrect system gain setting",
+    "Correction(s)": "Check the system gain setting and adjust as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Pressure instability",
+    "Cause(s)": "Faulty pressure sensor",
+    "Correction(s)": "Replace the pressure sensor"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Single nozzle valve drips when shut off",
+    "Cause(s)": "Plunger is lodged with debris",
+    "Correction(s)": "Clean the nozzle valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Single nozzle valve drips when shut off",
+    "Cause(s)": "Plunger is worn",
+    "Correction(s)": "Replace the plunger"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Single nozzle valve drips when shut off",
+    "Cause(s)": "O-ring is pinched or broken",
+    "Correction(s)": "Replace the O-ring"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Single nozzle valve sprays erratically",
+    "Cause(s)": "Plunger is worn",
+    "Correction(s)": "Replace the plunger"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Single nozzle valve will not shut off",
+    "Cause(s)": "Plunger is lodged with debris",
+    "Correction(s)": "Clean the nozzle valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Single nozzle valve will not shut off",
+    "Cause(s)": "O-ring is pinched or broken",
+    "Correction(s)": "Replace the O-ring"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Section will not spray",
+    "Cause(s)": "Faulty VCM",
+    "Correction(s)": "Repair or replace the VCM"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Section will not spray",
+    "Cause(s)": "Damaged VCM extension harness",
+    "Correction(s)": "Repair or replace the VCM extension harness"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Section will not spray",
+    "Cause(s)": "Rate controller is not activating the section",
+    "Correction(s)": "Make sure that the section signal is getting to the hub."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Section will not spray",
+    "Cause(s)": "Rate controller is not activating the section",
+    "Correction(s)": "Repair or replace the rate controller components."
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Skips at the edges of a field",
+    "Cause(s)": "Overlap distance is set too low",
+    "Correction(s)": "Increase the overlap distance to at least 40”"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Skips at the edges of a field",
+    "Cause(s)": "Incorrect GPS antenna location",
+    "Correction(s)": "Check the measurements to the GPS antenna location"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Skips at the edges of a field",
+    "Cause(s)": "The display overlap settings are incorrect",
+    "Correction(s)": "Set the look ahead time and overlap distance to prevent skips"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Skips at the edges of a field",
+    "Cause(s)": "Incorrect ball valve settings",
+    "Correction(s)": "Make sure that the ball valves are turning on soon enough or turning off late enough"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Tips are too small",
+    "Correction(s)": "Install tips of the correct size"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Tips are too small",
+    "Correction(s)": "Check the low rates with a Wilger Quick Calibrator (or similar) or with a catch time test at each nozzle: • Oz/min per nozzle = GPA x Test Speed (mph) x Nozzle Spacing (inches) / (5940 x 128) • Oz/min per nozzle = G/1000 ft² x Test Speed (mph) x Nozzle Spacing (inches) / (136 x 128)"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Plugged filters",
+    "Correction(s)": "Inspect the filters and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Plugged filters",
+    "Correction(s)": "Make sure that the filters are installed correctly"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Plugged lines",
+    "Correction(s)": "Make sure that the lines are clean and do not have any kinks"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Shutoff valve is partially closed",
+    "Correction(s)": "Make sure that each shutoff valve is fully open"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Control Valve Type: Use A, B, C, or D as it applies to your Machine",
+    "Correction(s)": "A. Pressure set too low on the flow by-pass lines Make sure that the settings on each • pressure controlled by-pass valve are correct B. In-line Servo flow control valve is stuck • Make sure that the Servo flow control valve is operating correctly C. Servo signal wire polarity is switched Make sure that the valve opens with a • rate increase Make sure that the valve closes with a • rate decrease D. Top PWM valve is set too low • Adjust the rate controller PWM valve to the desired setting"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Electric Servo Valve pump control is stuck",
+    "Correction(s)": "Make sure that the electric Servo pump control is operating correctly"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "PWM spool is stuck",
+    "Correction(s)": "Change the rate to observe whether the rate change is slow, limited, or does not change at all. Replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Worn pump",
+    "Correction(s)": "Speed data error"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Worn pump",
+    "Correction(s)": "Incorrect speed calibration number"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Worn pump",
+    "Correction(s)": "Poor GPS satellite reception/number of satellites"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under application",
+    "Cause(s)": "Worn pump",
+    "Correction(s)": "Spraying too fast which outruns the liquid system capability"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under Application",
+    "Cause(s)": "Worn flowmeter",
+    "Correction(s)": "Remove the rate smoothing feature"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Under Application",
+    "Cause(s)": "Worn flowmeter",
+    "Correction(s)": "Put the rate controller in manual mode at a test speed Note: Putting the rate controller in manual mode will lock the Servo valve position unless the valve position is changed manually. If the rate becomes stable: • Worn Servo Valve • Worn PWM Valve If the rate remains unstable, the issue is usually the flowmeter signal instability. Manually increase the rate. The rate and pressure should increase. If the rate does not increase: • Worn Servo Valve • Worn PWM Valve Manually decrease the rate. The rate and pressure should decrease. If the rate does not decrease: • Worn Servo Valve • Worn PWM Valve"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over Application",
+    "Cause(s)": "Worn tips or tips that are too big",
+    "Correction(s)": "Install tips of the correct size"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over Application",
+    "Cause(s)": "Worn tips or tips that are too big",
+    "Correction(s)": "Check the low rates with a Wilger Quick Calibrator (or similar) or with a catch time test at each nozzle: • Oz/min per nozzle = GPA x Test Speed (mph) x Nozzle Spacing (inches) / (5940 x 128) • Oz/min per nozzle = G/1000 ft² x Test Speed (mph) x Nozzle Spacing (inches) / (136 x 128)"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Over Application",
+    "Cause(s)": "Incorrect speed calibration value",
+    "Correction(s)": "Adjust the speed calibration setting"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Check the rate controller calibration values",
+    "Correction(s)": "Check the valve type and change if necessary"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Check the rate controller calibration values",
+    "Correction(s)": "Check the valve calibration. Refer to the rate controller information for the cal number for the specific valve type"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Worn or sticking Servo valve",
+    "Correction(s)": "Inspect the Servo valve and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Worn of sticking PWM valve",
+    "Correction(s)": "Inspect the PWM valve and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Flowmeter signal instability",
+    "Correction(s)": "Make sure that the flowmeter signal is correct"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Plugged, kinked, or collapsed hoses",
+    "Correction(s)": "Inspect all hoses and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Controller pressure instability",
+    "Correction(s)": "Isolate the display from the rate controller and then put the system in manual mode at 50%"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Controller pressure instability",
+    "Correction(s)": "Inspect the rate controller pressure sensor and replace as needed"
+  },
+  {
+    "Product": "PP3",
+    "FAULT CODE": "System Operation Error",
+    "FAULT MESSAGE": "Rate Instability",
+    "Cause(s)": "Controller pressure instability",
+    "Correction(s)": "Make sure that the rate controller calibration values are correct"
+  }
+]

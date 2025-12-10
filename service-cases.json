@@ -1,0 +1,695 @@
+[
+  {
+    "Manufacturer": "Fast",
+    "Issue": "No power at hub.",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Circuit breaker appeared closed but was actually open. Reset circuit breaker, power restored.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "No power at hub.",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Power cable was incorrectly connected at battery terminals. Rewired to battery disconnect properly, hub powered up.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Foot switch not turning boom on.",
+    "Issue Category": "Display / Integration",
+    "Resolution": "In Wrench > Initial Setup > Configuration > Master Switch Input, changed setting from 12V to Ground.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Sprayer turning on nozzles unexpectedly.",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Replace foot switch. (Temporary fix: change Master Switch Type to On-Screen to bypass defective switch.)",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Pump would not engage.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Update Hub software and perform factory reset.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "P1 and P2 locked in blue, unable to change pressure settings.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "No CAN GPS.",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Factory reset.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "GPS showing latitude/longitude line error.",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Selected alternate GPS option in setup; error resolved.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Not getting GPS from Pro 700.",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Wrong cabling used. Ordered and installed proper cable, GPS connection restored.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "John Deere not mapping correctly, leaving gaps.",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Fence Row Nozzle Setup not configured correctly; reconfigured setup to fix mapping.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Section control not shutting off in waterways.",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Section control subscription on Deere display not activated. Activated subscription and function restored.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Valve continuously spraying.",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Plunger was missing spring; replaced plunger.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Plunger lodged error.",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Cleaned contamination from plunger, restoring normal function.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "PWM nozzle replaced with drip check, causing pressure to bleed off in boom when off.",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Turn Master Switch OFF when boom is off so all section valves close, preventing bleed-off.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Unable to get pressure above 40 psi.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Plungers were worn; replaced plungers.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Premature coil failures.",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "See valve support bulletin on www.capstanag.com/resources.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Coil circuit open error and valves not working.",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Replaced coil, corrected wiring issue, system restored.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Recirculation not working.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Bad recirculation valve; replaced.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Recirculation valve faulty and opening when boom was on.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Replaced faulty recirculation valve.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Under application.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Recirculation valve spinning without motor stopping, returning flow to tank. Replaced recirculation valve.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Under application.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Turn off recirculation valve.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Boom recirculation stopped after 2 gallons.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Flush volume of 2 was entered, ending recirculation after 2 gallons passed through flowmeter. Set to 0 for continuous recirculation.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "System not coming up on JD monitor.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Hub lights on but not flashing. Replaced hub, system recognized on monitor.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Drop 6 CAN fault.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Pinched extension harness; repaired harness, issue resolved.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Turn compensation and section control not working.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "System would not respray previously applied areas.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "After software update, valves not in correct order.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Valves 5 and 87 plugged into wrong drop on VCM; corrected connections.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Spraying and mapping erratic.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Will not find VCMs.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Pro 1200 boom towing sideways.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Factory reset PinPoint, unhook implement, and clear object pool in Pro 1200.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Boom would not turn on and spray.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "John Deere Gen 4 display had outdated software (2018). Updated display software and system function restored.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Flow percentage error showing 100% flow.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Replaced faulty flowmeter; error resolved.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Flowmeter short circuit alarm.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Flowmeter harness connection corroded; repaired connection.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "PinPoint falling off ISOBUS.",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Updated Trimble ISOBUS screen; issue resolved.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Nozzle shutoff not working correctly.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Boom setup was incorrect; corrected setup restored shutoff function.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "Fast",
+    "Issue": "Individual nozzle shutoff not working.",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "JD2630 only supported 13 sections; upgraded to JD Gen 5 display for individual nozzle control.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Recirculation button stays blue / stuck on",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "After 10\u201315 minutes of operation, the Capstan UT drops off / disconnects",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Reloaded software and cleared object pool.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Turn compensation not working correctly",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Performed VCM orientation and mapped modules to correct boom locations.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Offsets change and turn compensation stops working after power cycle",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Ag Leader battery power not properly terminated.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Map flashes and changes colors",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Ag Leader automatic map legends must be unchecked / disabled.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "P3 falling off ISOBUS when 4 or more boom sections turned on",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Loose CAN connection on armrest display.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Duty cycle on bar graph not consistent on sections 3 and 4",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "CAN Channel 3 brown wire (key-switched) shorted to ground.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "PP2 to PP3 upgrade: #5 VCM not turning on and losing settings",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "VCM channels plugged into incorrect ports. No software restarts or factory resets were performed.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Valve lodged errors",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "PP3 operating in manual pressure mode with high pressure. Corrected system to automatic pressure control.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Auto Swath not turning off sections",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Unchecked box for ECU lookaheads in Ag Leader.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Remote fill station shutting down after 3 seconds",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Valve lodged open",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Replaced with new nozzle assembly.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Boom width not correct",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Fence row nozzle setup incorrect.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Shutoffs not working correctly",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "RS1 receiver requires Boom Ahead of Rear Axle measurement to be set to 0.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "How to enter specific gravity",
+    "Issue Category": "Operator / Training",
+    "Resolution": "Navigate to Wrench > Flow > Flowmeter Setup > Specific Gravity 1.",
+    "Resolution Category": "Operator Instruction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Current gallon counter not displaying correct count",
+    "Issue Category": "Operator / Training",
+    "Resolution": "Tap Gallons button. Select Current instead of Counter.",
+    "Resolution Category": "Operator Instruction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Valves leak after installation",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Corrected installation procedure; replaced damaged O-rings.",
+    "Resolution Category": "Cleaning / Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Low pressure fault",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Pressure sensor reading incorrect. Verified wiring and replaced pressure sensor.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Folding booms cause system loss of communication",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Found and repaired pinched wire.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Voltage feedback through flowmeter port on hub",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Replace flowmeter and pressure sensor damaged due to improper winterization.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Rate 1 and Rate Rx both selected when machine starts up",
+    "Issue Category": "Operator / Training",
+    "Resolution": "Immediate Fix: Click button to select only 1 field. Long-Term Fix: Update to current software.",
+    "Resolution Category": "Operator Instruction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Drop 5 CAN short",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Replaced extension; issue persisted. Replaced VCM and resolved issue.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Not mapping correctly on Ag Leader",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Ag Leader mapping flier point issue causing map zoom problem.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Constant \u201cSolution Pump Dry\u201d alarm on John Deere",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Disabled / removed JDRC and switchbox.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Valve lodged error",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Damaged plunger and O-ring.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "VCM Drop 1 version error",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Performed software restart; issue resolved.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Duty cycle percentage off",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Valve open on strainer. Close valve.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Confusion on entering tip size",
+    "Issue Category": "Operator / Training",
+    "Resolution": "Example: Red #4 nozzle is entered as 4.0, not 0.4.",
+    "Resolution Category": "Operator Instruction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "GPS speed issues after updating Viper display",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Rate is excessively high",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Recirculation valve open due to incorrect settings. Go Wrench > Boom/Nozzle > Recirculation Valve > Normally Closed.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Mapping Deere display shifted",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Correct fence row nozzle setup.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Software not loading",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Disconnected extra Bluetooth devices and reinstalled software.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Fence row nozzles not turning on",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Error not clearing when cycling key",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Software restart required to clear error.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Rate not responding after installation",
+    "Issue Category": "Operator / Training",
+    "Resolution": "Operator not selecting Rate Rx on Capstan screen; corrected setup.",
+    "Resolution Category": "Operator Instruction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "JD monitor not mapping correctly",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Update to current software and enter correct John Deere display settings.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Coil circuit open even with new coil installed",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Shifted VCM drop down one position to unused port; error cleared.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Skips in corners when applying",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Viper not orienting quickly enough out of corners. Turn on AccuBoom override.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Skipping in field during operation",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Disable Compass. Go Wrench > Navigation > Compass > Disable.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Blown fuse on Boom 1 extension harness",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Replaced damaged fuse; restored operation.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "VCM showing ghost valves (valves not installed)",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Replaced VCM; issue resolved.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Hub dropping off CAN bus",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Sections not turning on coming out of corner",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Disable Compass. Go Wrench > Navigation > Compass > Disable.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Valve lodged error",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Clear contamination from coil.",
+    "Resolution Category": "Cleaning / Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Recirculation valve not working with display button",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Update to current software.",
+    "Resolution Category": "Software Update"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Duty cycle very low but maintaining target rate",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Incorrect tip size selected; corrected tip configuration.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Rate and pressure unstable after software update",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Tuned pressure first, then rate; operation stabilized.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "PP3 not pulling up on UT; all LED lights solid",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "No boot code in hub. Replaced hub.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Accelerometer fault after hub replacement",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Factory reset hub; initialized accelerometer via Wrench > Navigation > Gyro.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Random valves reporting 'valve lodged closed'",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Replaced plungers, reduced pressure, corrected nozzle size entry.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Coils failing on every startup",
+    "Issue Category": "Valve Coil / Component Bulletin",
+    "Resolution": "See valve bulletin TB24-02 SpitFire Coil Internal Leaks.",
+    "Resolution Category": "Operator Instruction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Off-rate application",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Flowmeter error reporting 100%. Flowmeter not working.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Turn compensation operating backwards",
+    "Issue Category": "Navigation / Compass / GPS",
+    "Resolution": "Disabled compass; issue resolved.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Dropping off CAN bus",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Replaced chassis harness due to faulty CAN wires.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "PP3 shutting off every 4 nozzles",
+    "Issue Category": "Display / Integration",
+    "Resolution": "Adjust Maximum TC Sections to correct number.",
+    "Resolution Category": "Configuration Correction"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "P1/P2 and pump showing all blue on display",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Clear Object Pool on VT.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Sluggish rate control",
+    "Issue Category": "Pressure / Rate Control",
+    "Resolution": "Enter correct nozzle size and clear contamination from flowmeter.",
+    "Resolution Category": "Cleaning / Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Two VCMs counting nozzles incorrectly",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Factory reset not performed; reset and completed setup.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Fault 51 Drop 8 Power Short (nothing plugged in)",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Replace hub; internal hub fault.",
+    "Resolution Category": "Hardware Replacement"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "CAN channel failure",
+    "Issue Category": "CAN / Communication",
+    "Resolution": "Replace extension harness.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "PP3 falls off CAN repeatedly after key cycle",
+    "Issue Category": "Hardware / Electrical",
+    "Resolution": "Loose ground nut on chassis ground block; tightened connection.",
+    "Resolution Category": "Wiring / Connection Repair"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Softboom error: valves 2\u201381 displaying on Softboom 12",
+    "Issue Category": "Software / Configuration",
+    "Resolution": "Clear Object Pool and delete implement on VT. Factory reset PP3 and perform setup.",
+    "Resolution Category": "Factory Reset / Reinitialize"
+  },
+  {
+    "Manufacturer": "EquipTech",
+    "Issue": "Valves leaking on machine",
+    "Issue Category": "Valve / Flow",
+    "Resolution": "Plungers deformed from improper grinding; replaced plungers.",
+    "Resolution Category": "Hardware Replacement"
+  }
+]

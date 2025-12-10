@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KnowledgebaseFinalDemo</title>
+<style>
+  /* ===== CAPSTANAG HEADER (shared with Nozzle tools) ===== */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#000;
+  }
+
+  .header-inner{
+    max-width:1100px;
+    margin:0 auto;
+    padding:14px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+
+  .brand-link{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+  }
+
+  .brand-logo{
+    height:34px;
+    width:auto;
+    display:block;
+  }
+
+  .tool-nav{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:14px;
+    color:#e5e7eb;
+  }
+
+  .tool-label{
+    opacity:0.9;
+    font-weight:500;
+    margin-right:6px;
+    white-space:nowrap;
+  }
+
+  .tool-link{
+    padding:5px 14px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,0.35);
+    color:#e5e7eb;
+    text-decoration:none;
+    font-size:13px;
+    white-space:nowrap;
+    background:transparent;
+    cursor:pointer;
+  }
+
+  .tool-link:hover{
+    background:rgba(255,255,255,0.12);
+  }
+
+  .tool-link.active{
+    background:#ffffff;
+    color:#000;
+    border-color:#ffffff;
+  }
+
+  @media (max-width:720px){
+    .header-inner{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+    }
+
+    .tool-nav{
+      flex-wrap:wrap;
+      gap:10px;
+    }
+  }
+
+  /* Extra spacing inside the part dialog body */
+  #part-dialog .detail-card {
+    padding: 1rem 1.25rem 1.25rem 1.25rem; /* top/right/bottom/left */
+  }
+
+  /* Section visual treatment */
+  .section-block {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .section-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(190, 242, 100); /* lime-300 vibe */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-line {
+    margin-bottom: 0.75rem;
+  }
+
+  .row-main {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .row-qty {
+    color: rgb(163,163,163); /* neutral-400 */
+    font-weight: 500;
+  }
+
+  .row-pn {
+    color: #fff;
+  }
+
+  .row-desc {
+    font-size: 0.8rem;
+    color: rgb(163,163,163); /* neutral-400 */
+    margin-top: 0.25rem;
+    line-height: 1.2rem;
+  }
+
+  /* clickable parent assemblies in "Used in" */
+  .clickable-parent {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+  }
+  .clickable-parent:hover {
+    background-color: rgba(190, 242, 100, 0.07); /* faint lime tint */
+  }
+</style>
+<style>
+  :root{ --bg:#0b1220; --panel:#ffffff; --muted:#e5e7eb; --ink:#0b1220; --sub:#4b5563; --accent:#2563eb; --chip:#eef2ff; --chipb:#c7d2fe; --chipf:#1e3a8a; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);font:15px system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink)}
+  header{position:sticky;top:0;z-index:10;background:#111827;color:#fff;padding:12px 16px;font-weight:600;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;gap:10px;align-items:center}
+    .stats{
+    color:#d1d5db;
+    font-size:13px;
+    font-weight:500;
+    display:none; /* hide stats text bar */
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:16px}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .controls input,.controls select{border:1px solid var(--muted);border-radius:10px;padding:10px 12px;background:#fff}
+  .controls input{flex:1;min-width:260px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--muted);border-radius:14px;padding:14px;cursor:pointer;transition:box-shadow .15s ease;display:flex;flex-direction:column;gap:6px;position:relative}
+  .card:hover{box-shadow:0 4px 18px rgba(0,0,0,.08)}
+  .issue-main{font-size:15px;font-weight:700;margin-bottom:4px;color:#0b1220}
+  .kv{display:flex;gap:6px;font-size:13px;margin:2px 0}
+  .kv b{min-width:124px;color:#111827}
+  .pill{display:inline-block;background:var(--chip);color:var(--chipf);border:1px solid var(--chipb);border-radius:999px;padding:2px 8px;margin:0 6px 6px 0;font-size:12px}
+  .mfg-info{position:absolute;top:10px;right:14px;font-size:12px;color:#555;text-align:right}
+  .empty{opacity:.85;padding:24px;text-align:center;border:1px dashed var(--muted);border-radius:12px;color:#e5e7eb}
+  dialog{width:min(92vw,720px);border:none;border-radius:14px;padding:0;background:#0f172a;color:#e5ecff}
+  dialog::backdrop{background:rgba(0,0,0,.45)}
+  .dlg-head{padding:14px 16px;border-bottom:1px solid #1f2b49;font-weight:600}
+  .dlg-body{max-height:70vh;overflow:auto;padding:12px 16px;background:#0b1220}
+  table{width:100%;border-collapse:collapse}
+  td{padding:6px 8px;vertical-align:top;border-bottom:1px solid #1f2b49;font-size:13px}
+  td:first-child{color:#a9bad7;width:36%}
+  .menu-wrap{position:relative}
+  .menu-btn{background:transparent;border:1px solid #374151;color:#e5e7eb;border-radius:10px;padding:8px 10px;cursor:pointer}
+  .menu-panel{position:absolute;right:0;top:42px;background:#0b1220;border:1px solid #1f2937;border-radius:12px;min-width:260px;box-shadow:0 10px 24px rgba(0,0,0,.3);display:none}
+  .menu-panel button{width:100%;text-align:left;background:transparent;border:none;color:#e5e7eb;padding:10px 12px;cursor:pointer}
+  .menu-panel button:hover{background:#111827}
+  .switcher{display:flex;gap:8px}
+  .tab{background:transparent;border:1px solid #374151;color:#e5e7eb;border-radius:999px;padding:6px 10px;cursor:pointer;font-weight:600;font-size:13px;opacity:.8}
+  .tab[aria-pressed="true"]{background:#1f2937;opacity:1}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="https://www.capstanag.com" class="brand-link">
+        <img src="CapstanLogo.png" alt="CapstanAG" class="brand-logo">
+      </a>
+
+      <!-- Knowledgebase tool selector -->
+      <div class="tool-nav">
+        <span class="tool-label">Knowledgebase</span>
+
+        <!-- Internal view switches -->
+        <button type="button"
+                class="tool-link active"
+                data-view="cases">
+          Service Cases
+        </button>
+
+        <button type="button"
+                class="tool-link"
+                data-view="faults">
+          Fault Codes
+        </button>
+
+        <button type="button"
+                class="tool-link"
+                data-view="parts">
+          Parts
+        </button>
+
+        <!-- Future:
+        <button type="button"
+                class="tool-link"
+                data-view="booms">
+          Boom Builder
+        </button>
+        -->
+      </div>
+    </div>
+  </header>
+
+
+  <div class="wrap">
+    <div id="toast" style="display:none;margin:8px 0;padding:10px 12px;border-radius:10px;background:#fef3c7;color:#92400e;border:1px solid #f59e0b;font-size:13px"></div>
+    <!-- Hidden stats bar (needed for JS, never shown) -->
+    <div id="stats" class="stats"></div>
+    <div id="controls-cases" class="controls">
+      <input id="q-cases" type="text" placeholder="Search Issue, Resolution, Categories…" />
+      <select id="mfg"><option value="">All Manufacturers</option></select>
+      <select id="issueCat"><option value="">All Issue Categories</option></select>
+    </div>
+
+    <div id="controls-faults" class="controls" style="display:none">
+      <input id="q-faults" type="text" placeholder="Search code, description, product…" />
+      <select id="product"><option value="">All Products</option></select>
+    </div>
+
+    <div id="grid-cases" class="grid" hidden></div>
+    <div id="grid-faults" class="grid" hidden></div>
+	<div id="controls-parts" class="controls" style="display:none">
+  <input id="q-parts" type="text" placeholder="Search part number or description…" />
+</div>
+
+<div id="grid-parts" class="grid" hidden></div>
+  </div>
+
+  <dialog id="dlg" aria-modal="true" aria-labelledby="dlg-title">
+    <div class="dlg-head" id="dlg-title">Details</div>
+    <div class="dlg-body">
+      <table id="dlg-table"></table>
+    </div>
+  </dialog>
+ 
+<dialog id="part-dialog" class="detail-dialog">
+  <form method="dialog" class="detail-card">
+    <button class="close-btn" value="close" aria-label="Close">&times;</button>
+
+    <div class="detail-header">
+      <div class="detail-title" id="part-dialog-number"></div>
+      <div class="detail-sub" id="part-dialog-desc"></div>
+    </div>
+
+    <div class="detail-body">
+      <!-- BOM FIRST -->
+      <div class="detail-section" id="part-dialog-contains"></div>
+      <!-- Used In SECOND -->
+      <div class="detail-section" id="part-dialog-usedin"></div>
+    </div>
+  </form>
+</dialog>
+
+ 
+
+<script>
+// ---------------------- Utils ----------------------
+function clip(s, n=240){ s = String(s||''); return s.length>n ? s.slice(0,n-1)+'…' : s; }
+function splitTags(v){ return String(v||'').split(/[;,\n]/).map(t=>t.trim()).filter(Boolean); }
+function esc(s){ return String(s||'').replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function toCSV(rows){ if(!rows.length) return ''; const headers = Object.keys(rows[0]); const line = r=>headers.map(h=>{const v=r[h]??''; const s=String(v).replace(/"/g,'""'); return /[",\n]/.test(s)?`"${s}"`:s;}).join(','); return headers.join(',')+'\n'+rows.map(line).join('\n'); }
+
+// Key normalization
+const NORM_RE = /[\s_\-()\[\]{}:;\/\\.]+/g;
+function normKey(k){ return String(k||'').toLowerCase().replace(NORM_RE,'').trim(); }
+function buildKeyIndex(row){ const idx={}; Object.keys(row||{}).forEach(k=>{ idx[normKey(k)]=k; }); return idx; }
+function findKey(row, variants){ const idx = buildKeyIndex(row); for(const v of variants){ const nk = normKey(v); if(idx[nk]) return idx[nk]; } return null; }
+
+function toast(msg){ const el=document.getElementById('toast'); el.textContent=msg; el.style.display='block'; setTimeout(()=>{ el.style.display='none'; }, 4000); }
+
+// ---------------------- Service Cases ----------------------
+const REQUIRED = ['Manufacturer','Issue','Issue Category','Resolution','Resolution Category'];
+const COLS = { Manufacturer:'Manufacturer', Issue:'Issue', IssueCat:'Issue Category', Resolution:'Resolution', ResolutionCat:'Resolution Category', Product:'Product' };
+let RAW = [];
+
+function buildFacets(){
+  const mSel=document.getElementById('mfg');
+  const mSet=new Set(RAW.map(r=>r[COLS.Manufacturer]).filter(Boolean));
+  mSel.innerHTML='<option value="">All Manufacturers</option>'+[...mSet].sort().map(m=>`<option>${esc(m)}</option>`).join('');
+  const icSel=document.getElementById('issueCat');
+  const icSet=new Set(); RAW.forEach(r=>splitTags(r[COLS.IssueCat]).forEach(t=>icSet.add(t)));
+  icSel.innerHTML='<option value="">All Issue Categories</option>'+[...icSet].sort().map(t=>`<option>${esc(t)}</option>`).join('');
+}
+function matchesCategory(selected,value){ if(!selected)return true; const tags=splitTags(value); return tags.includes(selected); }
+function filteredCases(){
+  const q=document.getElementById('q-cases').value.toLowerCase();
+  const m=document.getElementById('mfg').value;
+  const ic=document.getElementById('issueCat').value;
+  return RAW.filter(r=>{
+    const matchesM=!m||r[COLS.Manufacturer]===m;
+    const matchesIC=matchesCategory(ic,r[COLS.IssueCat]);
+    const hay=(r[COLS.Issue]+' '+r[COLS.Resolution]+' '+r[COLS.IssueCat]+' '+r[COLS.ResolutionCat]).toLowerCase();
+    const matchesQ=!q||hay.includes(q);
+    return matchesM&&matchesIC&&matchesQ;
+  });
+}
+function renderCases(){
+  const list  = filteredCases();
+  const grid  = document.getElementById('grid-cases');
+  const stats = document.getElementById('stats');
+
+  if (!RAW.length) {
+    grid.hidden = true;
+    if (stats) stats.textContent = '';
+    return;
+  }
+
+  grid.hidden = false;
+  if (stats) stats.textContent = ''; // keep empty, no stats message
+
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty">No matching cases.</div>';
+    return;
+  }
+
+  grid.innerHTML = list.map((r, idx) => {
+    const issue = esc(clip(r[COLS.Issue] || ''));
+    const res   = esc(clip(r[COLS.Resolution] || ''));
+    const pills = [
+      ...splitTags(r[COLS.IssueCat]),
+      ...splitTags(r[COLS.ResolutionCat])
+    ].map(t => `<span class="pill">${esc(t)}</span>`).join('');
+    const manu  = esc(r[COLS.Manufacturer] || '');
+    const prod  = esc(r[COLS.Product] || '');
+
+    return `<article class="card" data-kind="case" data-idx="${idx}">
+      <div class="mfg-info">${manu}${prod ? ('<br>' + prod) : ''}</div>
+      <div class="issue-main">${issue}</div>
+      <div class="kv"><b>Resolution</b><span>${res}</span></div>
+      <div class="pills">${pills}</div>
+    </article>`;
+  }).join('');
+}
+
+function openCaseDialog(idx){
+  const r=filteredCases()[idx];
+  const dlg=document.getElementById('dlg');
+  const title = r[COLS.Manufacturer] + (r[COLS.Product]?(' — '+r[COLS.Product]):'');
+  document.getElementById('dlg-title').textContent= title || 'Case Details';
+  const tbl=document.getElementById('dlg-table');
+  const rows=[
+    ['Manufacturer',r[COLS.Manufacturer]],
+    ...(r[COLS.Product]?[['Product',r[COLS.Product]]]:[]),
+    ['Issue',r[COLS.Issue]],
+    ['Issue Category',r[COLS.IssueCat]],
+    ['Resolution',r[COLS.Resolution]],
+    ['Resolution Category',r[COLS.ResolutionCat]]
+  ];
+  tbl.innerHTML=rows.map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('');
+  dlg.showModal(); dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();},{once:true});
+}
+
+function loadCasesFromData(data){
+  RAW = Array.isArray(data) ? data : [];
+  buildFacets();
+  renderCases();
+  toast('Loaded Service Cases (' + RAW.length + ')');
+}
+
+
+function openPartDialog(idx){
+  const list = filteredParts();
+  const part = list[idx];
+  if (!part) return;
+
+  const dlg        = document.getElementById('part-dialog');
+  const numEl      = document.getElementById('part-dialog-number');
+  const descEl     = document.getElementById('part-dialog-desc');
+  const usedInEl   = document.getElementById('part-dialog-usedin');
+  const containsEl = document.getElementById('part-dialog-contains');
+
+  // header
+  numEl.textContent  = part.partNumber || '';
+  descEl.textContent = part.name || '';
+
+  // Lookups
+  const kids    = BOM_CHILDREN[part.partNumber] || [];
+  const parents = BOM_PARENTS[part.partNumber]  || [];
+
+  // Build "This assembly includes" (BOM / children) FIRST
+  if (kids.length){
+    containsEl.innerHTML = `
+      <div class="section-block">
+        <div class="section-title">This assembly includes</div>
+        <ul class="section-list">
+          ${kids.map(k => `
+            <li class="section-line">
+              <div class="row-main">
+                <span class="row-qty">${k.qty !== null && k.qty !== undefined ? '(qty ' + esc(k.qty) + ')' : ''}</span>
+                <span class="row-pn">${esc(k.partNumber)}</span>
+              </div>
+              <div class="row-desc">${esc(k.description || '')}</div>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    `;
+  } else {
+    containsEl.innerHTML = '';
+  }
+
+  // Build "Used in assemblies" SECOND
+  if (parents.length){
+    usedInEl.innerHTML = `
+      <div class="section-block">
+        <div class="section-title">Used in assemblies</div>
+        <ul class="section-list">
+          ${parents.map(p => `
+            <li class="section-line clickable-parent" data-parentpn="${esc(p.partNumber)}">
+              <div class="row-main">
+                <span class="row-pn">${esc(p.partNumber)}</span>
+              </div>
+              <div class="row-desc">${esc(p.description || '')}</div>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    `;
+  } else {
+    usedInEl.innerHTML = '';
+  }
+
+  // Attach click handler for "Used in assemblies" list
+  // Clicking a parent in that list should open THAT parent's dialog.
+  // We do this after we inject the HTML so the nodes exist.
+  if (parents.length){
+    usedInEl.querySelectorAll('.clickable-parent').forEach(node => {
+      node.addEventListener('click', () => {
+        const parentPN = node.getAttribute('data-parentpn');
+        if (!parentPN) return;
+        openPartDialogByPartNumber(parentPN);
+      });
+    });
+  }
+
+  dlg.showModal();
+}
+
+function openPartDialogByPartNumber(partNumber){
+  if (!partNumber) return;
+
+  // Find the full part record in PARTS_RAW
+  const match = PARTS_RAW.find(p => p.partNumber === partNumber);
+  if (!match) {
+    // If we can't find it, just quietly bail for now.
+    // (In Phase 3 we could surface "not found" toast.)
+    return;
+  }
+
+  // We'll temporarily reuse the same rendering path as openPartDialog(),
+  // but openPartDialog() relies on filteredParts() + index.
+  // Easiest trick: build a fake "list" with just this one part.
+  const originalFiltered = filteredParts;
+
+  // Monkey patch filteredParts() to return only this part,
+  // then call openPartDialog(0), then restore.
+  window.filteredParts = function(){ return [ match ]; };
+  openPartDialog(0);
+  window.filteredParts = originalFiltered;
+}
+
+
+// ---------------------- Fault Codes ----------------------
+let FAULTS_RAW = [];
+// ---------------------- Parts ----------------------
+let PARTS_RAW = [];
+//-----------------------BOMs-----------------------------
+let BOM_CHILDREN = {};
+let BOM_PARENTS  = {};
+
+const FKEYS = {
+  code: ['Fault Code','Code','code','Fault','PP3 Code'],
+  title: ['Fault Message','Title','title','Description','description','Meaning'],
+  product: ['Product','product','Applies To','AppliesTo','Platform'],
+  causes: ['Cause(s)','Causes','Cause','Root Cause'],
+  corrections: ['Correction(s)','Corrections','Correction','Action','Resolution']
+};
+function pick(row, variants){ const key=findKey(row,variants); if(key){ const v=row[key]; if(v!=null && String(v).trim()!=='') return v; } return ''; }
+function listify(v){ if(Array.isArray(v)) return v.map(s=>String(s).trim()).filter(Boolean); const raw=String(v||''); return raw.split(/[;\n]+/).map(s=>s.trim()).filter(Boolean); }
+function normFault(r){ const code=pick(r,FKEYS.code); const title=pick(r,FKEYS.title)||code||'Fault'; const product=pick(r,FKEYS.product); const causes=listify(pick(r,FKEYS.causes)); const corrections=listify(pick(r,FKEYS.corrections)); return { code, title, products:listify(product), causes, corrections, _raw:r }; }
+function hasAnyKey(row, variants){ return !!findKey(row, variants); }
+function buildProductFacet(){ const sel=document.getElementById('product'); const set=new Set(); FAULTS_RAW.forEach(r=> listify(pick(r,FKEYS.product)).forEach(p=>set.add(p)) ); sel.innerHTML='<option value="">All Products</option>'+[...set].sort().map(p=>`<option>${esc(p)}</option>`).join(''); }
+function filteredFaults(){ const q=document.getElementById('q-faults').value.toLowerCase(); const prod=document.getElementById('product').value; return FAULTS_RAW.map(normFault).filter(f=>{ const matchesP=!prod||f.products.includes(prod); const hay=(f.code+' '+f.title+' '+(f.products||[]).join(' ')+' '+(f.causes||[]).join(' ')+' '+(f.corrections||[]).join(' ')).toLowerCase(); const matchesQ=!q||hay.includes(q); return matchesP&&matchesQ; }); }
+function renderFaults(){
+  const list  = filteredFaults();
+  const grid  = document.getElementById('grid-faults');
+  const stats = document.getElementById('stats');
+
+  if (!FAULTS_RAW.length) {
+    grid.hidden = true;
+    if (stats) stats.textContent = '';
+    return;
+  }
+
+  grid.hidden = false;
+  if (stats) stats.textContent = ''; // keep empty, no stats message
+
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty">No matching fault codes.</div>';
+    return;
+  }
+
+  grid.innerHTML = list.map((f, idx) => {
+    const badge       = f.products.map(p => `<span class="pill">${esc(p)}</span>`).join('');
+    const causes      = (f.causes || []).length
+      ? `<div class="kv"><b>Causes</b><span>${esc(f.causes.join('; '))}</span></div>` : '';
+    const corrections = (f.corrections || []).length
+      ? `<div class="kv"><b>Corrections</b><span>${esc(f.corrections.join('; '))}</span></div>` : '';
+
+    return `<article class="card" data-kind="fault" data-idx="${idx}">
+      <div class="mfg-info">${badge}</div>
+      <div class="issue-main">${esc(f.code || '')}</div>
+      ${causes}
+      ${corrections}
+    </article>`;
+  }).join('');
+}
+
+function openFaultDialog(idx){ const f=filteredFaults()[idx]; const dlg=document.getElementById('dlg'); document.getElementById('dlg-title').textContent=f.code||'Fault Details'; const tbl=document.getElementById('dlg-table'); const rows=[ ['Product',(f.products||[]).join(', ')], ['Fault Code',f.code], ['Fault Message',f.title], ...(f.causes?.length?[["Cause(s)",f.causes.join('\n')]]:[]), ...(f.corrections?.length?[["Correction(s)",f.corrections.join('\n')]]:[]), ]; const used=new Set([].concat(FKEYS.product,FKEYS.code,FKEYS.title,FKEYS.causes,FKEYS.corrections).map(normKey)); Object.entries(f._raw).forEach(([k,v])=>{ if(!used.has(normKey(k))) rows.push([k, Array.isArray(v)?v.join(', '):v]); }); tbl.innerHTML=rows.map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join(''); dlg.showModal(); dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();},{once:true}); }
+
+// ---------------------- Parts Rendering ----------------------
+function filteredParts() {
+  const qInput = document.getElementById('q-parts');
+  const q = qInput ? qInput.value.toLowerCase() : '';
+
+  // PARTS_RAW is populated when you click "Load Parts JSON".
+  // When we load it, we already filter to only displayPart === true.
+  // Here we just search and limit the results.
+  return PARTS_RAW
+    .filter(p => {
+      const hay = (
+        (p.partNumber || '') + ' ' +
+        (p.name || '')
+      ).toLowerCase();
+      return !q || hay.includes(q);
+    })
+    .slice(0, 100); // don't render thousands of cards at once
+}
+
+function renderParts() {
+  const list  = filteredParts();
+  const grid  = document.getElementById('grid-parts');
+  const stats = document.getElementById('stats');
+
+  if (!grid) return;
+
+  if (!PARTS_RAW.length) {
+    grid.hidden = true;
+    if (stats) stats.textContent = '';
+    return;
+  }
+
+  grid.hidden = false;
+  if (stats) stats.textContent = ''; // keep empty, no stats message
+
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty">No matching parts.</div>';
+    return;
+  }
+
+  grid.innerHTML = list.map((p, idx) => {
+    const pn   = esc(p.partNumber || '');
+    const name = esc(p.name || '');
+    return `
+      <article class="card" data-kind="part" data-idx="${idx}">
+        <div class="issue-main">${pn}</div>
+        <div class="kv"><b>Description</b><span>${name}</span></div>
+      </article>
+    `;
+  }).join('');
+
+  grid.onclick = ev => {
+    const card = ev.target.closest('.card');
+    if (card && card.dataset.kind === 'part') {
+      openPartDialog(card.dataset.idx);
+    }
+  };
+}
+
+
+
+// ---------------------- View & Wiring ----------------------
+let view='cases';
+
+function setView(v){
+  view = v;
+
+  // tab buttons
+  const tabCases  = document.getElementById('tab-cases');
+  const tabFaults = document.getElementById('tab-faults');
+  const tabParts  = document.getElementById('tab-parts');
+
+  if (tabCases)  tabCases.setAttribute('aria-pressed', String(v === 'cases'));
+  if (tabFaults) tabFaults.setAttribute('aria-pressed', String(v === 'faults'));
+  if (tabParts)  tabParts.setAttribute('aria-pressed', String(v === 'parts'));
+
+  // filter/search control rows
+  const controlsCases  = document.getElementById('controls-cases');
+  const controlsFaults = document.getElementById('controls-faults');
+  const controlsParts  = document.getElementById('controls-parts');
+
+  if (controlsCases)  controlsCases.style.display  = (v === 'cases')  ? '' : 'none';
+  if (controlsFaults) controlsFaults.style.display = (v === 'faults') ? '' : 'none';
+  if (controlsParts)  controlsParts.style.display  = (v === 'parts')  ? '' : 'none';
+
+  // result grids
+  const gridCases  = document.getElementById('grid-cases');
+  const gridFaults = document.getElementById('grid-faults');
+  const gridParts  = document.getElementById('grid-parts');
+
+  if (gridCases)  gridCases.hidden  = (v !== 'cases');
+  if (gridFaults) gridFaults.hidden = (v !== 'faults');
+  if (gridParts)  gridParts.hidden  = (v !== 'parts');
+
+  // clear inactive grids and render the correct one
+  if (v === 'cases') {
+    if (gridFaults) gridFaults.innerHTML = '';
+    if (gridParts)  gridParts.innerHTML  = '';
+    renderCases();
+  } else if (v === 'faults') {
+    if (gridCases)  gridCases.innerHTML  = '';
+    if (gridParts)  gridParts.innerHTML  = '';
+    renderFaults();
+  } else { // parts
+    if (gridCases)  gridCases.innerHTML  = '';
+    if (gridFaults) gridFaults.innerHTML = '';
+    renderParts();
+  }
+}
+function loadBOMFromArray(bomRows){
+  // bomRows should have columns:
+  // Parent Part, Parent Description, Child Part, Child Description, Child Qty
+  BOM_CHILDREN = {};
+  BOM_PARENTS  = {};
+
+  if (!Array.isArray(bomRows)) return;
+
+  bomRows.forEach(row => {
+    const parentPN   = row.parentPart || row["Parent Part"];
+    const parentDesc = row.parentDesc || row["Parent Description"];
+    const childPN    = row.childPart  || row["Child Part"];
+    const childDesc  = row.childDesc  || row["Child Description"];
+    const qty        = row.qty        || row["Child Qty"];
+
+    if (!parentPN || !childPN) return;
+
+    // --- parent → children
+    if (!BOM_CHILDREN[parentPN]) BOM_CHILDREN[parentPN] = [];
+    BOM_CHILDREN[parentPN].push({
+      partNumber: childPN,
+      description: childDesc || "",
+      qty: qty ?? null
+    });
+
+    // --- child → parents
+    if (!BOM_PARENTS[childPN]) BOM_PARENTS[childPN] = [];
+    BOM_PARENTS[childPN].push({
+      partNumber: parentPN,
+      description: parentDesc || ""
+    });
+  });
+}
+
+// --- Auto-load JSON data for all views (GitHub Pages) ---
+async function autoLoadAllData(){
+  // Adjust these file names/paths to match your repo
+  const serviceCasesUrl = 'service-cases.json';
+  const faultCodesUrl   = 'fault-codes.json';
+  const partsUrl        = 'parts.json';
+  const bomUrl          = 'bom.json';
+
+  // Service Cases
+  try{
+    const res = await fetch(serviceCasesUrl);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    loadCasesFromData(data);
+  }catch(err){
+    console.error('[KB] Failed to load service cases:', err);
+    toast('Failed to load service cases JSON');
+  }
+
+  // Fault Codes
+  try{
+    const res = await fetch(faultCodesUrl);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    FAULTS_RAW = Array.isArray(data) ? data : [];
+    buildProductFacet();
+    renderFaults();
+  }catch(err){
+    console.error('[KB] Failed to load fault codes:', err);
+    toast('Failed to load fault codes JSON');
+  }
+
+  // Parts
+  try{
+    const res = await fetch(partsUrl);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    PARTS_RAW = (Array.isArray(data) ? data : []).filter(p => p.displayPart);
+    renderParts();
+  }catch(err){
+    console.error('[KB] Failed to load parts:', err);
+    toast('Failed to load parts JSON');
+  }
+
+  // BOM
+  try{
+    const res = await fetch(bomUrl);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    loadBOMFromArray(data);
+  }catch(err){
+    console.error('[KB] Failed to load BOM:', err);
+    toast('Failed to load BOM JSON');
+  }
+}
+
+
+(function init(){
+  function safeBind(id, fn){
+    const el=document.getElementById(id);
+    if(!el){
+      console.warn('[KB] Missing element for', id);
+      return;
+    }
+    el.addEventListener('click',(e)=>{
+      try{
+        e.stopPropagation();
+        fn(e);
+      } catch(err){
+        console.error('[KB] Click handler error for', id, err);
+        toast('Error in '+id+': '+(err&&err.message?err.message:String(err)));
+      }
+    });
+  }
+  
+    // Header "Knowledgebase" pills -> internal views
+  const kbNavButtons = document.querySelectorAll('.tool-link[data-view]');
+  kbNavButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const v = btn.getAttribute('data-view');
+      if (!v) return;
+
+      // switch internal view
+      setView(v);
+
+      // update active pill styling
+      kbNavButtons.forEach(b => {
+        b.classList.toggle('active', b === btn);
+      });
+    });
+  });
+
+  // Filters
+  ['q-cases','mfg','issueCat'].forEach(id=>{ const el=document.getElementById(id); el && el.addEventListener('input',renderCases); });
+  ['q-faults','product'].forEach(id=>{ const el=document.getElementById(id); el && el.addEventListener('input',renderFaults); });
+  ['q-parts'].forEach(id => {
+    const el = document.getElementById(id);
+    el && el.addEventListener('input', renderParts);
+  });
+
+  // Card preview (delegated)
+  const casesGrid=document.getElementById('grid-cases');
+  casesGrid && casesGrid.addEventListener('click',(e)=>{ const card=e.target.closest('.card[data-kind="case"]'); if(!card||!casesGrid.contains(card)) return; const idx=Number(card.dataset.idx); if(Number.isFinite(idx)) openCaseDialog(idx); });
+  const faultsGrid=document.getElementById('grid-faults');
+  faultsGrid && faultsGrid.addEventListener('click',(e)=>{ const card=e.target.closest('.card[data-kind="fault"]'); if(!card||!faultsGrid.contains(card)) return; const idx=Number(card.dataset.idx); if(Number.isFinite(idx)) openFaultDialog(idx); });
+
+  // Default view
+  setView('cases');
+
+  // Auto-load JSON data (fire-and-forget)
+  autoLoadAllData();
+
+  // --- Lightweight self-tests (won't block UI) ---
+  try{
+    console.assert(JSON.stringify(listify('a; b; c')) === JSON.stringify(['a','b','c']), 'listify ; split');
+    console.assert(JSON.stringify(listify('one\nTwo')) === JSON.stringify(['one','Two']), 'listify newline split');
+    console.assert(listify('Sentence with, commas; next').length===2, 'listify keeps commas inside sentences');
+  }catch(_){/*noop*/}
+})();
+</script>
+</body>
+</html>
