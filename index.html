@@ -268,11 +268,18 @@
   </div>
 
   <dialog id="dlg" aria-modal="true" aria-labelledby="dlg-title">
-    <div class="dlg-head" id="dlg-title">Details</div>
-    <div class="dlg-body">
-      <table id="dlg-table"></table>
-    </div>
-  </dialog>
+  <div class="dlg-head" style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+    <div id="dlg-title">Details</div>
+    <button type="button" id="dlg-close" aria-label="Close"
+            style="background:transparent;border:1px solid #374151;color:#e5e7eb;border-radius:10px;padding:6px 10px;cursor:pointer;font-size:16px;line-height:1">
+      &times;
+    </button>
+  </div>
+  <div class="dlg-body">
+    <table id="dlg-table"></table>
+  </div>
+</dialog>
+
  
 <dialog id="part-dialog" class="detail-dialog">
   <form method="dialog" class="detail-card">
@@ -346,7 +353,6 @@ function renderCases(){
     return;
   }
 
-  grid.hidden = false;
   if (stats) stats.textContent = ''; // keep empty, no stats message
 
   if (!list.length) {
@@ -395,8 +401,9 @@ function loadCasesFromData(data){
   RAW = Array.isArray(data) ? data : [];
   buildFacets();
   renderCases();
-  toast('Loaded Service Cases (' + RAW.length + ')');
+  // prod: no success toast
 }
+
 
 
 function openPartDialog(idx){
@@ -533,7 +540,6 @@ function renderFaults(){
     return;
   }
 
-  grid.hidden = false;
   if (stats) stats.textContent = ''; // keep empty, no stats message
 
   if (!list.length) {
@@ -810,6 +816,12 @@ async function autoLoadAllData(){
 
   // Default view
   setView('cases');
+ 
+	// Close button for shared details dialog (cases + faults)
+  const dlg = document.getElementById('dlg');
+  const dlgClose = document.getElementById('dlg-close');
+  if (dlg && dlgClose) dlgClose.addEventListener('click', () => dlg.close());
+
 
   // Auto-load JSON data (fire-and-forget)
   autoLoadAllData();
