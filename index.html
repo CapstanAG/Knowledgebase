@@ -349,7 +349,7 @@ function renderCases(){
   const stats = document.getElementById('stats');
 
   if (!RAW.length) {
-    grid.hidden = true;
+    grid.innerHTML = '';
     if (stats) stats.textContent = '';
     return;
   }
@@ -536,7 +536,7 @@ function renderFaults(){
   const stats = document.getElementById('stats');
 
   if (!FAULTS_RAW.length) {
-    grid.hidden = true;
+    grid.innerHTML = '';
     if (stats) stats.textContent = '';
     return;
   }
@@ -593,7 +593,7 @@ function renderParts() {
   if (!grid) return;
 
   if (!PARTS_RAW.length) {
-    grid.hidden = true;
+    grid.innerHTML = '';
     if (stats) stats.textContent = '';
     return;
   }
