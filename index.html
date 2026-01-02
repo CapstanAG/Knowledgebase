@@ -597,7 +597,6 @@ function renderParts() {
     return;
   }
 
-  grid.hidden = false;
   if (stats) stats.textContent = ''; // keep empty, no stats message
 
   if (!list.length) {
@@ -735,6 +734,7 @@ async function autoLoadAllData(){
     FAULTS_RAW = Array.isArray(data) ? data : [];
     buildProductFacet();
     renderFaults();
+    if (view !== 'faults') document.getElementById('grid-faults').hidden = true;
   }catch(err){
     console.error('[KB] Failed to load fault codes:', err);
     toast('Failed to load fault codes JSON');
@@ -747,6 +747,7 @@ async function autoLoadAllData(){
     const data = await res.json();
     PARTS_RAW = (Array.isArray(data) ? data : []).filter(p => p.displayPart);
     renderParts();
+    if (view !== 'parts') document.getElementById('grid-parts').hidden = true;
   }catch(err){
     console.error('[KB] Failed to load parts:', err);
     toast('Failed to load parts JSON');
